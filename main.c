@@ -26,7 +26,7 @@
 #include <time.h>
 #include <sys/time.h>
 #include <sys/types.h>
-#include <pcap.h>
+#include <pcap-bpf.h>
 
 #include "hping2.h"
 
