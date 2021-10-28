@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: fix file not found
-      run: ln -snf /usr/include/pcap-bpf.h /usr/include/net/bpf.h
     - name: configure
       run: bash gentables.sh && ./configure
     - name: make
