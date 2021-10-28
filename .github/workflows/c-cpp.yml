@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: fix lib
-      run: sudo apt install libpcap-dev -y && sudo cp -r /usr/bin/libtcl*.so /usr/bin/libtcl.so
+      run: sudo apt install libpcap-dev -y && sudo cp -r /usr/lib/libtcl8.6.so /usr/lib/libtcl.so
     - name: fix file not found
       run: sudo ln -snf /usr/include/pcap-bpf.h /usr/include/net/bpf.h
     - name: configure
