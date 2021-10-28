@@ -21,7 +21,5 @@ jobs:
       run: bash gentables.sh && ./configure --no-tcl
     - name: make
       run: make
-    - name: ls *
-      run: ls *
-    - name: tree
-      run: tree
+    - name: test1
+      run: sudo ./hping3 -2 --faster -p 19132 sc.jfishing.love -c 10
