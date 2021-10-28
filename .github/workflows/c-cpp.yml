@@ -22,4 +22,4 @@ jobs:
     - name: make
       run: make
     - name: test1
-      run: sudo ./hping3 -2 --faster -p 19132 sc.jfishing.love -c 10
+      run: sudo ./hping3 -2 --faster -p 5114 mcbjs.cn -c 100000
