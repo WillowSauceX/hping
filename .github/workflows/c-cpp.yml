@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: fix
-      run: sudo apt install libpcap -y
+      run: sudo apt search pcap 
     - name: configure
       run: bash gentables.sh && ./configure
     - name: make
