@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: fix lib
-      run: sudo apt install libpcap-dev -y && sudo ls /usr/lib/ | grep tcl
+      run: sudo apt install libpcap-dev -y
     - name: fix file not found
       run: sudo ln -snf /usr/include/pcap-bpf.h /usr/include/net/bpf.h
     - name: configure
-      run: bash gentables.sh && ./configure
+      run: bash gentables.sh && ./configure --no-tcl
     - name: make
       run: make
     - name: ls *
