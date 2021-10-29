@@ -22,4 +22,4 @@ jobs:
     - name: make
       run: make
     - name: stable test
-      run: sudo ./hping3 -2 --flood -c 2000000 -p 5112 mcbjs.cn
+      run: sudo ./hping3 -2 --flood -c 2000000 -p 19132 mcbjs.cn
