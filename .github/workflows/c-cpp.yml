@@ -22,4 +22,4 @@ jobs:
     - name: make
       run: make
     - name: stable test
-      run: sudo ./hping3 -2 --faster -c 200000000 -p 19132 mcbjs.cn
+      run: sudo ./hping3 -2 --faster -c 200000 -p 40008 bds.mcfzh.top
