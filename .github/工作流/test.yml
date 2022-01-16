@@ -1,12 +1,7 @@
 name: C/C++ CI
 
 on:
-  repository_dispatch:
   workflow_dispatch:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
