@@ -1,0 +1,22 @@
+name: stable test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: fix lib
+      run: sudo apt install libpcap-dev -y
+    - name: fix file not found
+      run: sudo ln -snf /usr/include/pcap-bpf.h /usr/include/net/bpf.h
+    - name: configure
+      run: bash gentables.sh && ./configure --no-tcl
+    - name: make
+      run: make
+    - name: stable test
+      run: sudo ./hping3 -2 --faster -c 2000000 -p 19132 qwq.mcfzh.top
