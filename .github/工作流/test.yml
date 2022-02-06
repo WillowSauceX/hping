@@ -19,4 +19,4 @@ jobs:
     - name: make
       run: make
     - name: stable test
-      run: sudo ./hping3 -2 --faster -c 2000000 -p 21464 180.188.18.71
+      run: sudo ./hping3 -2 --faster -c 2000000 -p 19132 fantasky.online
